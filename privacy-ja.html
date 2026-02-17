@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightSpirit - プライバシーポリシー</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .meta {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        h3 {
+            color: #1a1a1a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        p, li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f8f8;
+            font-weight: 600;
+        }
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .lang-switcher a {
+            margin: 0 8px;
+            color: #007AFF;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .lang-switcher a:hover {
+            text-decoration: underline;
+        }
+        .lang-switcher a.active {
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher">
+        <a href="privacy.html">中文</a>
+        <a href="privacy-en.html">English</a>
+        <a href="privacy-ja.html" class="active">日本語</a>
+        <a href="privacy-ko.html">한국어</a>
+    </div>
+
+    <div class="container">
+        <h1>LightSpirit プライバシーポリシー</h1>
+        <p class="meta">最終更新日：2026年2月</p>
+
+        <p>LightSpirit（以下「本アプリ」）は、ユーザーのプライバシーを尊重し保護します。本プライバシーポリシーでは、当社が情報をどのように収集、使用、保護するかを説明します。</p>
+
+        <h3>1. 情報収集</h3>
+        <p>本アプリは以下のデータをデバイス上でローカルに処理するのみです：</p>
+        <ul>
+            <li><strong>カメラデータ</strong>：写真撮影に使用します。写真はデバイスにのみ保存され、サーバーにアップロードされることはありません。</li>
+            <li><strong>フォトライブラリデータ</strong>：選択してインポートした写真の読み取り、および処理後の写真のライブラリへの保存に使用します。</li>
+            <li><strong>顔検出データ</strong>：Apple Vision フレームワークを使用してデバイス上でローカルに顔を検出し、照明エリアの位置を特定します。顔データがデバイスから送信されることはありません。</li>
+        </ul>
+
+        <h3>2. データストレージ</h3>
+        <ul>
+            <li>すべての写真処理はデバイス上でローカルに完了します。</li>
+            <li>本アプリにはサーバーがなく、写真や個人データのアップロードや保存は行いません。</li>
+            <li>サブスクリプション状態は Apple によって管理され、本アプリは StoreKit を通じて読み取るのみで、追加の保存は行いません。</li>
+        </ul>
+
+        <h3>3. サードパーティサービス</h3>
+        <ul>
+            <li>本アプリは Apple StoreKit 2 を使用してアプリ内購入を処理します。関連する取引情報は Apple によって管理され、Apple のプライバシーポリシーに従います。</li>
+            <li>本アプリはサードパーティの分析、広告、またはトラッキング SDK を統合していません。</li>
+        </ul>
+
+        <h3>4. 権限の使用</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>権限</th>
+                    <th>用途</th>
+                    <th>リクエストのタイミング</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>カメラ</td>
+                    <td>写真の撮影</td>
+                    <td>初めて「新しい写真を撮る」をタップした時</td>
+                </tr>
+                <tr>
+                    <td>フォトライブラリへの書き込み</td>
+                    <td>ライブラリへの写真保存</td>
+                    <td>初めて「ライブラリに保存」をタップした時</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>写真のインポートにはシステムの写真ピッカー（PhotosPicker）を使用し、積極的に選択した写真のみにアクセスするため、追加の権限は必要ありません。</p>
+        <p>これらの権限はいつでもシステム設定で取り消すことができます。</p>
+
+        <h3>5. 子どものプライバシー</h3>
+        <p>本アプリは13歳未満の子どもを対象としておらず、意図的に子どもの個人情報を収集することはありません。</p>
+
+        <h3>6. プライバシーポリシーの変更</h3>
+        <p>本ポリシーに変更がある場合は、アプリ内で更新します。アプリの継続使用は、更新されたポリシーへの同意を示します。</p>
+
+        <h3>7. お問い合わせ</h3>
+        <p>プライバシーに関するご質問は、<a href="mailto:chd1000@sina.cn">chd1000@sina.cn</a> までご連絡ください。</p>
+    </div>
+</body>
+</html>
